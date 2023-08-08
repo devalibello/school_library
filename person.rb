@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Represent a super class from where teacher and student classes inherit
 class Person
   attr_accessor :name, :age

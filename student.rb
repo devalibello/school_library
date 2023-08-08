@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require './person'
 
 # Represents a student subclass with a specific specialization.
@@ -10,6 +8,6 @@ class Student < Person
   end
 
   def play_hooky
-    "¯\(ツ)/¯"
+    '¯(ツ)/¯'
   end
 end
