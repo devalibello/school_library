@@ -2,8 +2,8 @@ require './person'
 
 # Represents a student subclass with a specific specialization.
 class Student < Person
-  def initialize(classroom)
-    super
+  def initialize(age, classroom, name = 'unknown', parent_permission: true)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
