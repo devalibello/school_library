@@ -1,4 +1,4 @@
-# Vet clinic database
+# school_library
 <br>
 <div align='center'>
 	<h1>School Library</h1>
@@ -38,6 +38,8 @@
 ### Key Features <a name="key-features"></a>
 
 - Add and remove books from library
+- Implemented Ruby decorators design pattern
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +115,6 @@ To run the project:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[use the "Decorator" design pattern]**
 - [ ] **[set up associations]**
 
 
