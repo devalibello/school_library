@@ -1,8 +1,5 @@
-class Nameable
-  def correct_name
-    raise NotImplementedError, "#{self.class} has not implemented method #{__method__}"
-  end
-end
+require './nameable'
+require './decorators'
 
 class Person < Nameable
   attr_accessor :name, :age
@@ -31,29 +28,6 @@ class Person < Nameable
     return true if @age >= 18
 
     false
-  end
-end
-
-class BaseDecorator < Nameable
-  def initialize(nameable)
-    super()
-    @nameable = nameable
-  end
-
-  def correct_name
-    @nameable
-  end
-end
-
-class CapitalizedDecorator < BaseDecorator
-  def correct_name
-    @nameable.correct_name.upcase
-  end
-end
-
-class TrimmerDecorator < BaseDecorator
-  def correct_name
-    @nameable.correct_name[0, 10]
   end
 end
 
