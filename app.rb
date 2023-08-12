@@ -54,34 +54,6 @@ class App
     Student.new(age, name, parent_permission)
   end
 
-  # def create_student
-  #   student_data = gather_student_data
-  #   student = Student.new(student_data[:age], student_data[:name], student_data[:parent_permission])
-  #   push_person_to_list(student)
-  #   puts 'Person created successfully'
-  # end
-
-  # def gather_student_data
-  #   student_data = {}
-  #   puts 'Age:'
-  #   student_data[:age] = gets.chomp
-  #   puts 'Name:'
-  #   student_data[:name] = gets.chomp
-  #   puts 'Has Parent Permission? [Y/N]:'
-  #   student_data[:parent_permission] = gets.chomp.downcase == 'y'
-  #   student_data
-  # end
-
-  # def create_teacher
-  #   puts 'Age:'
-  #   age = gets.chomp
-  #   puts 'Name:'
-  #   name = gets.chomp
-  #   puts 'Specialization:'
-  #   specialization = gets.chomp
-  #   Teacher.new(age, name, specialization)
-  # end
-
   def create_teacher
     create_person_with_specialization(Teacher)
   end
@@ -99,16 +71,6 @@ class App
   def push_person_to_list(person)
     @people.push(person)
   end
-
-  # def create_book
-  #   puts 'Title:'
-  #   title = gets.chomp
-  #   puts 'Author:'
-  #   author = gets.chomp
-  #   book = Book.new(title, author)
-  #   @books.push(book)
-  #   puts 'Book created successfully'
-  # end
 
   def create_book
     title = user_input('Title:')

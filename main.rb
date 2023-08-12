@@ -34,16 +34,6 @@ def process_option(option, app)
   false
 end
 
-# def main
-#   app = App.new
-
-#   loop do
-#     display_menu
-#     option = gets.chomp.to_i
-#     break if process_option(option, app)
-#   end
-# end
-
 def main
   app = App.new
 
