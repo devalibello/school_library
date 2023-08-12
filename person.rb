@@ -2,16 +2,15 @@ require './nameable'
 require './decorators'
 
 class Person < Nameable
-  attr_accessor :name, :age, :rental
+  attr_accessor :name, :age, :rentals
   attr_reader :id
 
-  def initialize(age, name = 'unknown', parent_permission: true)
-    super()
+  def initialize(age, name = 'unknown', _parent_permission: true)
     @age = age
     @name = name
-    @parent_permission = parent_permission
     @id = Random.rand(1..1000)
     @rentals = []
+    super()
   end
 
   def can_use_services?
@@ -37,9 +36,9 @@ class Person < Nameable
   end
 end
 
-person = Person.new(22, 'maximilianus')
-person.correct_name
-capitalized_person = CapitalizedDecorator.new(person)
-puts capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name
+# person = Person.new(22, 'maximilianus')
+# person.correct_name
+# capitalized_person = CapitalizedDecorator.new(person)
+# puts capitalized_person.correct_name
+# capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+# puts capitalized_trimmed_person.correct_name

@@ -39,6 +39,11 @@
 
 - Add and remove books from library
 - Implemented Ruby decorators design pattern
+- Designed using ruby associations
+- Add books with author to library list
+- Add students and teachers to list
+- Keep track of book rentals
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,7 +120,7 @@ To run the project:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[set up associations]**
+- [ ] **[Add more functionalities to the UI]**
 
 
 <!-- CONTRIBUTING -->
