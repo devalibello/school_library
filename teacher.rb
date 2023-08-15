@@ -1,9 +1,8 @@
 require './person'
 
-# Represents a teacher with a specific specialization.
 class Teacher < Person
-  def initialize(age, specialization, name = 'unknown', parent_permission: true)
-    super(age, name, parent_permission)
+  def initialize(age, name, specialization)
+    super(age, name)
     @specialization = specialization
   end
 
